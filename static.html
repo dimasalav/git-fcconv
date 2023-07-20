@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="статистический калькулятор">
+    <meta name="keywords" content="финансовый калькулятор, калькулятор доходности банковского вклада, калькулятор доходности ценных бумаг, калькулятор роста падения, калькулятор усреднения, статистический калькулятор, конвертер валют, кредитный калькулятор">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/brands.css">
+    <!-- <script src="https://kit.fontawesome.com/e87c1d29bf.js" crossorigin="anonymous"></script> -->
+    <title>Статистический калькулятор</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="container-fluid my-4">
+            <div class="row text-center text-uppercase mb-4 nav">
+                 <div class="col-12"><a href="index.html"><h5>На главную</h5></a></div>
+            </div>
+            
+            <div class="row border-bottom border-3 text-center">
+                <div class="col-12"><h2>Статистический калькулятор</h2></div>
+                <div class="col-12"><h4>Данный калькулятор осуществляет суммирование и вычисление
+                    среднего значения введенных чисел</h4></div>
+            </div>
+        </div> 
+    </header> 
+    <main class="flex-grow-1">
+          <div class="container">
+                <div class="row">
+                        <div class="col-16 col-md-6">
+                                <div class="mb-4">
+                                        <label for="vvod" class="form-label"> Введи число: </label>
+                                        <input class="input form-control" id="vvod" type="number" name="vvod" value="" step="0.01">
+                                </div>
+                                <div class="mb-4">
+                                        <input class="btn btn-primary d-inline-block me-4" type="button" value="Добавить" onclick="AddChislo();">
+                                        <input class="btn btn-primary d-inline-block" type="button" value="Очистить" onclick="Clear();">
+                                </div>
+                                <div class="my-4">
+                                        <textarea class="input form-control" name="listbox" id="listbox" cols="" rows="15"></textarea> 
+                                </div>
+
+                        </div>
+                        <div class="col-16 col-md-6">
+                                <div class="row" style="margin-top: 31px;">
+                                       <div class="input-group mb-4">
+                                                <span class="input-group-text out">Введено чисел: </span>
+                                                <input class="form-control  out" type="number" id="n" name="n" value="0" readonly>
+                                       </div>
+                                       <div class="input-group mb-4">
+                                                <span class="input-group-text out">Сумма равна: </span>
+                                                <input  class="form-control out" type="number" id="summa" name="summa" value="0" readonly>
+                                       </div>
+                                       <div class="input-group mb-4">
+                                                <span class="input-group-text out"> Среднее значение:</span>
+                                                <input  class=" form-control out" type="number" id="sr" name="sr" value="0" readonly>
+                                       </div>
+                                </div>
+
+                        </div>
+                </div>
+          </div>
+
+    </main> 
+    
+    <footer class="border-top border-3 mt-3">
+        <div class="container-fluid p-2">
+                <div class="row">
+                        <div class="text-center text-md-start col-12 col-md-4">
+                            Версия 3.3
+                        </div> 
+                        <div class="text-center text-md-center col-12 col-md-4 my-3 my-md-0">
+                             <span style="font-weight: 500;">Создание сайтов и веб-приложений:</span><br>
+                         <a class="footer__email link-primary" href="mailto:dmitrijk53530@gmail.com">dmitrijk53530@gmail.com</a><br>
+                         <a href="https://vk.com/id516226489" target="_blank" class="footer__vk link-primary">@id516226489</a>
+                        </div>
+                        <div class="text-center text-md-end col-12 col-md-4">
+                            &copy; 2023
+                        </div>
+                        
+                    </div><!--row-->
+        </div>
+
+    </footer>
+    <script src="js/static.js"></script>
+</body>
+</html>

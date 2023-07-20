@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="калькулятор усреднения">
+    <meta name="keywords" content="финансовый калькулятор, калькулятор доходности банковского вклада, калькулятор доходности ценных бумаг, калькулятор роста падения, калькулятор усреднения, статистический калькулятор, конвертер валют, кредитный калькулятор">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/brands.css">
+    <!-- <script src="https://kit.fontawesome.com/e87c1d29bf.js" crossorigin="anonymous"></script> -->
+    <title>Калькулятор усреднения</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="container-fluid my-4">
+            <div class="row text-center text-uppercase mb-4 nav">
+                 <div class="col-12"><a href="index.html"><h5>На главную</h5></a></div>
+            </div>
+            
+            <div class="row border-bottom border-3 text-center">
+                <div class="col-12"><h2>Калькулятор усреднения</h2></div>
+                <div class="col-12"><h4>Данный калькулятор рассчитывает среднее значения активов</h4></div>
+            </div>
+        </div> 
+    </header> 
+    <main class="flex-grow-1">
+            <div class="container">
+                  <div class="row">
+                         <div class="col-16 col-md-6">
+                                <h5 class="text-center border-bottom border-2" style="padding: 0; border: none; color:navy;">Исходные данные:</h5>
+                                <div class="mb-3">
+                                    <label for="qlot" class="form-label">Количество лотов:</label>
+                                    <input class="input form-control" id="qlot" type="number" name="qlot" value="" step="1">
+                                    <input class="form-range range" id="qlot-range" type="range" value="0" min="0" max="100000" step="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="plot" class="form-label">Средняя цена лотов:</label>
+                                    <input class="input form-control" id="plot" type="number" name="plot" value="" step="0.01">
+                                    <input class="form-range range" id="plot-range" type="range" value="0" min="0" max="50000" step="0.01">       
+                                </div>
+                                <h5 class="text-center border-bottom border-2" style="padding: 0; border: none; color:navy;">Введенные данные:</h5>
+                                <div class="mb-3">
+                                    <label for="qlotnew" class="form-label">Количество новых лотов:</label>
+                                    <input class="input form-control" id="qlotnew" type="number" name="qlotnew" value="" step="1">
+                                    <input class="form-range range" id="qlotnew-range" type="range" value="0" min="0" max="100000" step="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="plotnew" class="form-label">Цена нового лота:</label>
+                                    <input class="input form-control" id="plotnew" type="number" name="plotnew" value="" step="0.01">
+                                    <input class="form-range range" id="plotnew-range" type="range" value="0" min="0" max="50000" step="0.01">       
+                                </div>
+                         </div>
+                         <div class="col-16 col-md-6">
+                                <div class="row">
+                                    <h5 class="text-center border-bottom border-2" style="padding: 0; border: none; color:navy;">Новые данные:</h5>
+                                    <div class="input-group input-group" style="margin-top: 31px; margin-bottom: 35px;">
+                                        <span class="input-group-text out" id="plotsr-label">Расчитанное среднее значение:</span>
+                                        <input class="form-control out" id="plotsr" name="plotsr" type="number" value="0" readonly="readonly" aria-describedby="plotsr-label">
+                                    </div>
+                                </div>
+
+                         </div>
+                  </div>
+            </div>
+
+    </main> 
+    
+    <footer class="border-top border-3 mt-3">
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="text-center text-md-start col-12 col-md-4">
+                    Версия 3.3
+                </div> 
+                <div class=" text-center text-md-center col-12 col-md-4 my-3 my-md-0">
+                     <span style="font-weight: 500;">Создание сайтов и веб-приложений:</span><br>
+                         <a class="footer__email link-primary" href="mailto:dmitrijk53530@gmail.com">dmitrijk53530@gmail.com</a><br>
+                         <a href="https://vk.com/id516226489" target="_blank" class="footer__vk link-primary">@id516226489</a>
+                </div>
+                <div class="text-center text-md-end col-12 col-md-4">
+                    &copy; 2023
+                </div>
+                
+            </div><!--row-->
+        </div>
+
+    </footer>
+    <script src="js/srednee.js"></script>
+</body>
+</html>

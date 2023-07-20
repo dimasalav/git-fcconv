@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="кредитный калькулятор">
+    <meta name="keywords" content="финансовый калькулятор, калькулятор доходности банковского вклада, калькулятор доходности ценных бумаг, калькулятор роста падения, калькулятор усреднения, статистический калькулятор, конвертер валют, кредитный калькулятор">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/brands.css">
+    <!-- <script src="https://kit.fontawesome.com/e87c1d29bf.js" crossorigin="anonymous"></script> -->
+    <title>Кредитный калькулятор</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="container-fluid my-4">
+            <div class="row text-center text-uppercase mb-4 nav">
+                 <div class="col-12"><a href="index.html"><h5>На главную</h5></a></div>
+            </div>
+            
+            <div class="row border-bottom border-3 text-center">
+                <div class="col-12"><h2>Кредитный калькулятор</h2></div>
+                <div class="col-12"><h4 class="h5">Данный калькулятор рассчитывает сумму кредита, ежемесячный платеж и рекомендуемый доход для погашения суммы кредита</h4></div>
+            </div>
+        </div> 
+    </header> 
+    <main class="flex-grow-1">
+        <div class="container">
+            <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="input1" class="form-label">Стоимость недвижимости:</label>
+                            <input class="form-control input" id="input1" name="input1" type="number" value="0" placeholder="Стоимость недвижимости" title="Стоимость недвижимости" min="1000" max="10000000" autofocus>
+                            <input class="form-range range" id="range1" type="range" value="0" min="1000" max="10000000">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="input2" class="form-label">Первоначальный взнос:</label>
+                            <input class="form-control input" id="input2" name="input2" type="number" value="100000" placeholder="Первоначальный взнос" title="Первоначальный взнос" min="100000" max="10000000" autofocus>
+                            <input class="form-range range" id="range2" type="range" value="0" min="100000" max="10000000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input3" class="form-label">Срок кредита:</label>
+                            <input class="form-control input" id="input3" name="input3" type="number" value="1" placeholder="Срок кредита" title="Срок кредита" min="1" max="20" autofocus>
+                            <input class="form-range range" id="range3" type="range" value="1" min="1" max="20">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input4" class="form-label">Ставка по кредиту,%:</label>
+                            <input class="form-control input" id="input4" name="input4" type="number" value="8" placeholder="Ставка по кредиту,%" title="Ставка по кредиту,%" min="1" max="30" step="0.01" autofocus>
+                            <input class="form-range range" id="range4" type="range" value="8" min="1" max="30" step="0.01">
+                        </div> 
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div style="margin-top: 31px; margin-bottom: 35px;">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text out">Сумма кредита:</span>
+                                    <input type="text" class="form-control out" id="output1" value="0" readonly="readonly">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text out">Ежемесячный платеж:</span>
+                                    <input type="text" class="form-control out" id="output2" value="0" readonly="readonly">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text out">Рекомендуемый доход:</span>
+                                    <input type="text" class="form-control out" id="output3" value="0" readonly="readonly">
+                                </div>
+                        </div>
+                    </div>
+            </div>            
+        </div>
+    </main> 
+    
+    <footer class="border-top border-3 mt-3">
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="text-center text-md-start col-12 col-md-4">
+                    Версия 3.3
+                </div> 
+                <div class=" text-center text-md-center col-12 col-md-4 my-3 my-md-0">
+                     <span style="font-weight: 500;">Создание сайтов и веб-приложений:</span><br>
+                         <a class="footer__email link-primary" href="mailto:dmitrijk53530@gmail.com">dmitrijk53530@gmail.com</a><br>
+                         <a href="https://vk.com/id516226489" target="_blank" class="footer__vk link-primary">@id516226489</a>
+                </div>
+                <div class="text-center text-md-end col-12 col-md-4">
+                    &copy; 2023
+                </div>
+                
+            </div><!--row-->
+        </div>
+
+    </footer>
+    <script src="js/credit.js"></script>
+</body>
+</html>
